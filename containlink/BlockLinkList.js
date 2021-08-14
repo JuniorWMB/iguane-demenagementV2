@@ -5,6 +5,7 @@
 import { ImTruck, GiShop } from "react-icons/gi";
 import { FaBox } from "react-icons/fa";
 import { SiCodesandbox } from "react-icons/si";
+import Image from "next/image";
 import Box0 from "../public/box0.jpg";
 import Box1 from "../public/box1.jpg";
 import Box2 from "../public/box3.jpg";
@@ -17,7 +18,8 @@ const data = [
     title: "Devis",
     text: "Déménagement de particuliers ou proféssionnels, débarras, monte meuble.",
     link: "/devis/",
-    picture: { Box0 },
+    picture: <Image src={Box0} alt="ok" />,
+    linkPicture: "/public/box0.jpg",
   },
   {
     id: 2,
@@ -25,7 +27,8 @@ const data = [
     title: "Transport",
     text: "Course urgentes, organisateur de transport, tournées régulières, affrètement.",
     link: "/transport/",
-    picture: { Box1 },
+    picture: <Image src={Box1} alt="ok" />,
+    linkPicture: "/public/box1.jpg",
   },
   {
     id: 3,
@@ -33,7 +36,8 @@ const data = [
     title: "Stockage",
     text: "En rack ou au sol dans un entrepôt chauffer et sécuriser. Réception, préparation et expédition de vos marchandises.",
     link: "/stockage/",
-    picture: { Box2 },
+    picture: <Image src={Box2} alt="ok" />,
+    linkPicture: "/public/box2.jpg",
   },
   {
     id: 4,
@@ -41,7 +45,8 @@ const data = [
     title: "Shop",
     text: "Nous proposon une large sélection de produits indispensable pour votre déménagement (cartons,adhesifs,housse etc...).",
     link: "/shop/",
-    picture: { Box0 },
+    picture: <Image src={Box0} alt="ok" />,
+    linkPicture: "/public/box0.jpg",
   },
 ];
 

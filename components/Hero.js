@@ -7,13 +7,13 @@ const HeroBanner = () => {
         <Image src={HeroImage} alt="3 men with a box" />
       </div>
       <div className="flex flex-col items-center relative w-96 h-96 top-60 left-10 p-5">
-        <div className="relative z-20">
+        <div className="relative z-20 mb-5">
           <h1 className="text-6xl font-sans text-white z-20">Votre</h1>
           <h1 className="text-6xl font-sans text-white z-0">Spécialiste</h1>
           <h1 className="text-6xl font-sans text-white ">déménagement</h1>
         </div>
 
-        <p>
+        <p className="mb-5">
           Déménagement pour particuliers, solutions logistiques pour les
           professionels et vente de carton et fourniture de déménagement.
         </p>
