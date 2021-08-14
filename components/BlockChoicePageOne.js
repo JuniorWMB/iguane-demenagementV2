@@ -2,8 +2,10 @@ import socialLink from "../containlink/BlockLinkList";
 import ItemsBlock from "./ItemsBlock";
 import Box0 from "../public/box0.jpg";
 import Box1 from "../public/box1.jpg";
-import Box2 from "../public/box3.jpg";
-import { ImTruck, GiShop } from "react-icons/gi";
+import Box2 from "../public/box4.jpg";
+import Box3 from "../public/box5.jpg";
+import { GiShop } from "react-icons/gi";
+import { ImTruck } from "react-icons/im";
 import { FaBox } from "react-icons/fa";
 import { SiCodesandbox } from "react-icons/si";
 // import Link from "next/link";
@@ -24,6 +26,13 @@ const ChoiceBlockPageOne = () => {
           texte="En rack ou au sol dans un entrepôt chauffer et sécuriser. Réception, préparation et expédition de vos marchandises."
           link="/stockage/"
           picture={Box2}
+        />
+        <ItemsBlock
+          title="Transport"
+          Icon={ImTruck}
+          texte="Course urgentes, organisateur de transport, tournées régulières, affrètement."
+          link="/transport/"
+          picture={Box3}
         />
         <ItemsBlock
           title="Shop"
