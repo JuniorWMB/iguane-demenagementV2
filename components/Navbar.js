@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../public/logo-iguane.png";
+import { BiHomeAlt, BiPhone, BiNote, BiShoppingBag } from "react-icons/bi";
 
 const Navbar = () => {
   return (
@@ -9,21 +10,28 @@ const Navbar = () => {
         <Image
           src={logo}
           alt="logo iguane vert"
-          width={50}
-          height={70}
+          width={30}
+          height={40}
           quality="100"
           placeholder="blur"
         />
       </div>
       <div className="flex justify-between items-end w-96">
-        <Link href="">
+        <Link href="/">
+          {/* <BiHomeAlt /> */}
           <a>Home</a>
         </Link>
-        <Link href="">
+        <Link href="/">
+          {/* <BiNote /> */}
           <a>Devis</a>
         </Link>
-        <Link href="">
+        <Link href="/">
+          {/* <BiPhone /> */}
           <a>Contact</a>
+        </Link>
+        <Link href="/">
+          {/* <BiShoppingBag /> */}
+          <a>Shop</a>
         </Link>
       </div>
     </nav>
