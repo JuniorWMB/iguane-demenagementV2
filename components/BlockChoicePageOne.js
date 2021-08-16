@@ -1,4 +1,3 @@
-import socialLink from "../containlink/BlockLinkList";
 import ItemsBlock from "./ItemsBlock";
 import Box0 from "../public/box0.jpg";
 import Box1 from "../public/box1.jpg";

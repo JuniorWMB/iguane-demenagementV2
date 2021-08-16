@@ -8,10 +8,10 @@ import HeroBanner from "../components/Hero";
 
 export default function Home() {
   return (
-    <div className="p-10">
+    <div>
       <HeroBanner />
-      <ChoiceBlockPageOne />
-      <FormDem />
+      {/* <ChoiceBlockPageOne />
+      <FormDem /> */}
     </div>
   );
 }

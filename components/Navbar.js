@@ -1,11 +1,19 @@
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../public/logo-iguane.png";
+import {
+  HomeIcon,
+  PencilAltIcon,
+  PhoneIcon,
+  ShoppingCartIcon,
+} from "@heroicons/react/outline";
+
 import { BiHomeAlt, BiPhone, BiNote, BiShoppingBag } from "react-icons/bi";
+import ItemsNav from "./ItemsNavBar";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between  px-10   bg-white-200 border border-gray-200 h-20 ">
+    <nav className=" flex flex-col-reverse justify-evenly items-center p-5 border-b-2 border-green-200 w-full">
       <div className="flex items-center ">
         <Image
           src={logo}
@@ -13,26 +21,13 @@ const Navbar = () => {
           width={30}
           height={40}
           quality="100"
-          placeholder="blur"
         />
       </div>
-      <div className="flex justify-between items-end w-96">
-        <Link href="/">
-          {/* <BiHomeAlt /> */}
-          <a>Home</a>
-        </Link>
-        <Link href="/">
-          {/* <BiNote /> */}
-          <a>Devis</a>
-        </Link>
-        <Link href="/">
-          {/* <BiPhone /> */}
-          <a>Contact</a>
-        </Link>
-        <Link href="/">
-          {/* <BiShoppingBag /> */}
-          <a>Shop</a>
-        </Link>
+      <div className="flex justify-evenly">
+        <ItemsNav title="HOME" Icon={HomeIcon} />
+        <ItemsNav title="DEVIS" Icon={PencilAltIcon} />
+        <ItemsNav title="CONTACT" Icon={PhoneIcon} />
+        <ItemsNav title="SHOP" Icon={ShoppingCartIcon} />
       </div>
     </nav>
   );
