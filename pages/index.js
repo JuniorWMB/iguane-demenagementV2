@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <div>
       <HeroBanner />
-      {/* <ChoiceBlockPageOne />
-      <FormDem /> */}
+      <ChoiceBlockPageOne />
+      {/* <FormDem /> */}
     </div>
   );
 }

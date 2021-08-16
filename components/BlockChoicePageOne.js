@@ -10,38 +10,37 @@ import { SiCodesandbox } from "react-icons/si";
 // import Link from "next/link";
 const ChoiceBlockPageOne = () => {
   return (
-    <>
-      <div className="cursor-pointer flex justify-between items-center h-96 w-full">
-        <ItemsBlock
-          title="Devis"
-          Icon={FaBox}
-          texte=" Déménagement de particuliers ou proféssionnels, débarras, monte meuble."
-          link="/devis/"
-          picture={Box0}
-        />
-        <ItemsBlock
-          title="Stockage"
-          Icon={SiCodesandbox}
-          texte="En rack ou au sol dans un entrepôt chauffer et sécuriser. Réception, préparation et expédition de vos marchandises."
-          link="/stockage/"
-          picture={Box2}
-        />
-        <ItemsBlock
-          title="Transport"
-          Icon={ImTruck}
-          texte="Course urgentes, organisateur de transport, tournées régulières, affrètement."
-          link="/transport/"
-          picture={Box3}
-        />
-        <ItemsBlock
-          title="Shop"
-          Icon={GiShop}
-          texte="Nous proposon une large sélection de produits indispensable pour votre déménagement (cartons,adhesifs,housse etc...)."
-          link="/Shop/"
-          picture={Box0}
-        />
-      </div>
-    </>
+    <div className="flex justify-center flex-wrap flex-col overflow-x-scroll w-full h-96 px-5">
+      {/* <div className="overflow-x-scroll flex-row justify-between flex-wrap items-center h-96 w-full bg-gray-600"> */}
+      <ItemsBlock
+        title="Devis"
+        Icon={FaBox}
+        texte=" Déménagement de particuliers ou proféssionnels, débarras, monte meuble."
+        link="/devis/"
+        picture={Box0}
+      />
+      <ItemsBlock
+        title="Stockage"
+        Icon={SiCodesandbox}
+        texte="En rack ou au sol dans un entrepôt chauffer et sécuriser. Réception, préparation et expédition de vos marchandises."
+        link="/stockage/"
+        picture={Box2}
+      />
+      <ItemsBlock
+        title="Transport"
+        Icon={ImTruck}
+        texte="Course urgentes, organisateur de transport, tournées régulières, affrètement."
+        link="/transport/"
+        picture={Box3}
+      />
+      <ItemsBlock
+        title="Shop"
+        Icon={GiShop}
+        texte="Nous proposon une large sélection de produits indispensable pour votre déménagement (cartons,adhesifs,housse etc...)."
+        link="/Shop/"
+        picture={Box0}
+      />
+    </div>
   );
 };
 
