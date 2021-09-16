@@ -25,8 +25,7 @@ const FormDem = () => {
           cols="30"
           rows="10"
         ></textarea>
-        <button type="submit">Envoie</button>
-        
+        <button type="submit">Envoi</button>
       </form>
     </div>
 
