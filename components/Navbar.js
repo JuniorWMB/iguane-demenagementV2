@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useState, useEffect } from "react";
 import logo from "../public/logo-iguane.png";
 import {
   HomeIcon,
@@ -11,12 +12,28 @@ import {
 import ItemsNav from "./ItemsNavBar";
 
 const Navbar = () => {
+  const [navbar, setNavbar] = useState(false);
+  useEffect(() => {
+    const changeBackground = () => {
+      if (window.scrollY >= 80) {
+        setNavbar(true);
+      } else {
+        setNavbar(false);
+      }
+      // console.log("scrollY", window.scrollY);
+    };
+    window.addEventListener("scroll", changeBackground);
+  }, []);
   return (
+    // flex flex-col-reverse justify-evenly items-center
+    //  p-2  w-full
+    //  fixed top-0 z-20 bg-transparent
     <nav
-      className="flex flex-col-reverse justify-evenly items-center
-     p-2  w-full
-     fixed top-0 z-20
-     "
+      className={
+        !navbar
+          ? "transition duration-150 ease-in-out flex flex-col justify-evenly items-center p-2 w-full fixed top-0 z-20 bg-transparent"
+          : "transition duration-150 ease-in-out bg-white flex flex-col justify-evenly items-center p-2 w-full fixed top-0 z-20"
+      }
     >
       <div className="flex items-center ">
         <Image
