@@ -10,7 +10,7 @@ import { SiCodesandbox } from "react-icons/si";
 // import Link from "next/link";
 const ChoiceBlockPageOne = () => {
   return (
-    <div className="flex justify-center flex-wrap flex-col overflow-x-scroll w-full h-96 px-5">
+    <div className="flex justify-center flex-wrap flex-col overflow-x-scroll w-full h-96  px-5 scrollbar-hide">
       {/* <div className="overflow-x-scroll flex-row justify-between flex-wrap items-center h-96 w-full bg-gray-600"> */}
       <ItemsBlock
         title="Devis"

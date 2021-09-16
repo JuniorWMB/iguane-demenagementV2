@@ -8,12 +8,14 @@ import {
   ShoppingCartIcon,
 } from "@heroicons/react/outline";
 
-import { BiHomeAlt, BiPhone, BiNote, BiShoppingBag } from "react-icons/bi";
 import ItemsNav from "./ItemsNavBar";
 
 const Navbar = () => {
   return (
-    <nav className=" flex flex-col-reverse justify-evenly items-center p-5 border-b-2 border-green-200 w-full">
+    <nav
+      className=" flex flex-col-reverse justify-evenly items-center
+     p-5 border-b-2 shadow-md w-full"
+    >
       <div className="flex items-center ">
         <Image
           src={logo}
@@ -24,7 +26,7 @@ const Navbar = () => {
         />
       </div>
       <div className="flex justify-evenly">
-        <ItemsNav title="HOME" Icon={HomeIcon} />
+        <ItemsNav title="ACCUEIL" Icon={HomeIcon} />
         <ItemsNav title="DEVIS" Icon={PencilAltIcon} />
         <ItemsNav title="CONTACT" Icon={PhoneIcon} />
         <ItemsNav title="SHOP" Icon={ShoppingCartIcon} />
